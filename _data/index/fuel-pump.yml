@@ -1,0 +1,14 @@
+- name: FUEL PUMP CENTER L
+  link: /nnc/fuel/pump/fuel-pump-center-l.html
+- name: FUEL PUMP CENTER R
+  link: /nnc/fuel/pump/fuel-pump-center-r.html
+- name: FUEL PUMP CTR L+R
+  link: /nnc/fuel/pump/fuel-pump-ctr-l-r.html
+- name: FUEL PUMP L AFT
+  link: /nnc/fuel/pump/fuel-pump-l-aft.html
+- name: FUEL PUMP L FWD
+  link: /nnc/fuel/pump/fuel-pump-l-fwd.html
+- name: FUEL PUMP R AFT
+  link: /nnc/fuel/pump/fuel-pump-r-aft.html
+- name: FUEL PUMP R FWD
+  link: /nnc/fuel/pump/fuel-pump-r-fwd.html

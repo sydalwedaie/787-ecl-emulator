@@ -1,0 +1,199 @@
+ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, body, html, p, blockquote, fieldset, input, button {
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	-ms-touch-action: manipulation;
+	touch-action: manipulation;
+	overflow-y: scroll;
+	-webkit-overflow-scrolling: touch;
+}
+
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+ul {
+	list-style-type: none;
+}
+
+
+body {
+	/*background/*: url(../../assets/images/nnc.jpg) center no-repeat;*/
+	/*background: url(../../assets/images/unannunciated.jpg) center no-repeat;*/
+	/*background: url(../../assets/images/engine.jpg) center no-repeat;*/
+	/*background-size: auto 700px;*/
+
+
+}
+
+@font-face {
+  font-family: 'Futura Condensed Medium';
+  src: url("/assets/fonts/futura.eot?#") format("eot"), url("/assets/fonts/futura.ttf") format("truetype"), url("/assets/fonts/futura.woff") format("woff"); }
+
+#container{
+	font-family: "Futura Condensed Medium";
+	background-color: black;
+	color: white;
+	width: 100vw;
+	max-width: 700px;
+	height: 100vh;
+	/*max-height: 150vw;*/
+	/*margin: 0 auto 0; /* change first to 31px */
+	padding: 2px;
+	opacity: 1;
+
+}
+
+/* ============================================ */
+/* BUTTON GENERAL
+/* ============================================ */
+
+.button {
+	display: block;
+	text-decoration: none;
+	letter-spacing: 0.7px;
+	line-height: 1;
+
+	color: white;
+	padding: 0 10px;
+	background-color: #737175;
+
+	border-style: outset;
+	border-width: 2px;
+	border-top-color: #504e52;
+	border-left-color: #504e52;
+	border-right-color: #98959c;
+	border-bottom-color: #98959c;
+
+	display: flex;
+  	flex-direction: column;
+  	justify-content: center;
+
+}
+
+.button:active {
+    border-right-color: gray;
+    border-bottom-color: gray;
+    background-color: #3e6b2b;
+}
+
+.button-wrap {
+	padding: 1.5px;
+	background-color: black;
+	border-radius: 2px;
+
+}
+
+.button-wrap:hover {
+	background-color: #ff00ca;
+}
+
+.button-wrap:hover .button {
+	border: 2px solid #ff00ca;
+
+}
+
+/* ============================================ */
+/* HEADER
+/* ============================================ */
+.navigation-menu {
+	display:  flex;
+
+}
+
+.navigation-menu-item {
+	width: 33.33%;
+}
+
+.navigation-menu-item .button{
+	
+	height: 35px;
+	text-align: center;
+}
+
+
+/* ============================================ */
+
+.content-header h1, .content-header h2, .content-header h3 {
+	font-size: 20px;
+	font-weight: normal;
+	text-align: center; 
+	height: 42px;
+	display: flex;
+  	flex-direction: column;
+  	justify-content: center;
+
+}
+
+
+
+.content-header .button {
+	height: 42px;
+	background-color: #3e6b2b; /* green */
+	border-style: inset;
+	border-width: 2px;
+	border-top-color: grey;
+	border-left-color: grey;
+	border-right-color: #4D4D4D;
+	border-bottom-color: #4D4D4D;
+	
+}
+
+
+.content-level-1 {
+	height: 87%;
+}
+
+.content-level-2 {
+	height: 76%;
+}
+
+.content-level-3 {
+	height: 70%;
+}
+
+.content-menu {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	height: 100%;
+}
+
+.content-menu-item .button {
+	font-size: 110%;
+	height: 49px;
+	text-align: left;
+}
+
+
+.content-menu-item.button-wrap {
+	width: 50%;
+}
+
+
+/* ============================================ */
+.checklist-content
+
+
+/* ============================================ */
+
+.footer {
+	clear:  both;
+}
+
+.footer-item {
+	float: right;
+}
+
+.footer-item .button {
+	font-size: 20px;
+	width: 80px;
+	height: 49px;
+	padding: 0 9px;
+	text-align: center;
+}

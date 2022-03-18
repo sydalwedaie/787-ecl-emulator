@@ -1,0 +1,28 @@
+- name: APU SHUTDOWN
+  link: /nnc/engine/damage/apu-shutdown.html
+- name: Dual Eng Fail/Stall
+  link: /nnc/engine/damage/dual-eng-fail-stall.html
+- name: ENG FAIL L
+  link: /nnc/engine/damage/eng-fail-l.html
+- name: ENG FAIL R
+  link: /nnc/engine/damage/eng-fail-r.html
+- name: ENG SHUTDOWN
+  link: /nnc/engine/damage/eng-shutdown.html
+- name: ENG SHUTDOWN L
+  link: /nnc/engine/damage/eng-shutdown-l.html
+- name: ENG SHUTDOWN R
+  link: /nnc/engine/damage/eng-shutdown-r.html
+- name: Eng Svr Damage/Sep L
+  link: /nnc/engine/damage/eng-svr-damage-sep-l.html
+- name: Eng Svr Damage/Sep R
+  link: /nnc/engine/damage/eng-svr-damage-sep-r.html
+- name: ENG THRUST L
+  link: /nnc/engine/damage/eng-thrust-l.html
+- name: ENG THRUST R
+  link: /nnc/engine/damage/eng-thrust-r.html
+- name: ENG THRUST HIGH L
+  link: /nnc/engine/damage/eng-thrust-high-l.html
+- name: ENG THRUST HIGH R
+  link: /nnc/engine/damage/eng-thrust-high-r.html
+- name: THRUST ASYM PROT
+  link: /nnc/engine/damage/thrust-asym-prot.html

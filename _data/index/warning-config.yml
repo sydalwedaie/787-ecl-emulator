@@ -1,0 +1,16 @@
+- name: CONFIG DOORS
+  link: /nnc/warning/config/config-doors.html
+- name: CONFIG FLAPS
+  link: /nnc/warning/config/config-flaps.html
+- name: CONFIG GEAR
+  link: /nnc/warning/config/config-gear.html
+- name: CONFIG PARKING BRAKE
+  link: /nnc/warning/config/config-parking-brake.html
+- name: CONFIG RUDDER
+  link: /nnc/warning/config/config-rudder.html
+- name: CONFIG SPOILERS
+  link: /nnc/warning/config/config-spoilers.html
+- name: CONFIG STABILIZER
+  link: /nnc/warning/config/config-stabilizer.html
+- name: CONFIG WARNING SYS
+  link: /nnc/warning/config/config-warning-sys.html

@@ -1,0 +1,44 @@
+- name: APU BATTERY
+  link: /nnc/elec/apu-battery.html
+- name: ELEC AC BUS L1
+  link: /nnc/elec/elec-ac-bus-l1.html
+- name: ELEC AC BUS L2
+  link: /nnc/elec/elec-ac-bus-l2.html
+- name: ELEC AC BUS R1
+  link: /nnc/elec/elec-ac-bus-r1.html
+- name: ELEC AC BUS R2
+  link: /nnc/elec/elec-ac-bus-r2.html
+- name: ELEC BATTERY OFF
+  link: /nnc/elec/elec-battery-off.html
+- name: ELEC CABIN/UTIL OFF
+  link: /nnc/elec/elec-cabin-util-off.html
+- name: ELEC GEN DRIVE L1
+  link: /nnc/elec/elec-gen-drive-l1.html
+- name: ELEC GEN DRIVE L2
+  link: /nnc/elec/elec-gen-drive-l2.html
+- name: ELEC GEN DRIVE R1
+  link: /nnc/elec/elec-gen-drive-r1.html
+- name: ELEC GEN DRIVE R2
+  link: /nnc/elec/elec-gen-drive-r2.html
+- name: ELEC GEN OFF APU L
+  link: /nnc/elec/elec-gen-off-apu-l.html
+- name: ELEC GEN OFF APU R
+  link: /nnc/elec/elec-gen-off-apu-r.html
+- name: ELEC GEN OFF L1
+  link: /nnc/elec/elec-gen-off-l1.html
+- name: ELEC GEN OFF L2
+  link: /nnc/elec/elec-gen-off-l2.html
+- name: ELEC GEN OFF R1
+  link: /nnc/elec/elec-gen-off-r1.html
+- name: ELEC GEN OFF R2
+  link: /nnc/elec/elec-gen-off-r2.html
+- name: ELEC IFE/SEATS OFF
+  link: /nnc/elec/elec-ife-seats-off.html
+- name: ELEC STANDBY SYS
+  link: /nnc/elec/elec-standby-sys.html
+- name: MAIN BATTERY
+  link: /nnc/elec/main-battery.html
+- name: MAIN BATTERY DISCH
+  link: /nnc/elec/main-battery-disch.html
+- name: MAIN BATTERY LOW
+  link: /nnc/elec/main-battery-low.html

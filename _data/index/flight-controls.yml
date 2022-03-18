@@ -1,0 +1,44 @@
+- name: FLAPS, SLATS ...
+  link: /nnc/flight-controls/flaps/index.html
+- name: AUTO SPEEDBRAKE
+  link: /nnc/flight-controls/auto-speedbrake.html
+- name: FLIGHT CONTROL MODE
+  link: /nnc/flight-controls/flight-control-mode.html
+- name: FLIGHT CONTROLS
+  link: /nnc/flight-controls/flight-controls.html
+- name: FLT CONTROLS LOCKED
+  link: /nnc/flight-controls/flt-controls-locked.html
+- name: Jammed Flight Controls
+  link: /nnc/flight-controls/jammed-flight-controls.html
+- name: PITCH DOWN AUTHORITY
+  link: /nnc/flight-controls/pitch-down-authority.html
+- name: PITCH UP AUTHORITY
+  link: /nnc/flight-controls/pitch-up-authority.html
+- name: PRI FLIGHT COMPUTERS
+  link: /nnc/flight-controls/pri-flight-computers.html
+- name: ROLL/YAW ASYMMETRY
+  link: /nnc/flight-controls/roll-yaw-asymmetry.html
+- name: ROLL LEFT AUTHORITY
+  link: /nnc/flight-controls/roll-left-authority.html
+- name: ROLL RIGHT AUTHORITY
+  link: /nnc/flight-controls/roll-right-authority.html
+- name: SPEEDBRAKE EXTENDED
+  link: /nnc/flight-controls/speedbrake-extended.html
+- name: SPOILER DRAG
+  link: /nnc/flight-controls/spoiler-drag.html
+- name: SPOILER PAIRS
+  link: /nnc/flight-controls/spoiler-pairs.html
+- name: SPOILERS
+  link: /nnc/flight-controls/spoilers.html
+- name: STAB GREENBAND
+  link: /nnc/flight-controls/stab-greenband.html
+- name: STABILIZER
+  link: /nnc/flight-controls/stabilizer.html
+- name: STABILIZER CUTOUT
+  link: /nnc/flight-controls/stabilizer-cutout.html
+- name: STABILIZER L2
+  link: /nnc/flight-controls/stabilizer-l2.html
+- name: STABILIZER R2
+  link: /nnc/flight-controls/stabilizer-r2.html
+- name: STALL PROTECTION
+  link: /nnc/flight-controls/stall-protection.html

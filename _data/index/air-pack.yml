@@ -1,0 +1,20 @@
+- name: PACK ALTITUDE LIMIT
+  link: /nnc/air/pack/pack-altitude-limit.html
+- name: PACK L
+  link: /nnc/air/pack/pack-l.html
+- name: PACK R
+  link: /nnc/air/pack/pack-r.html
+- name: PACK L+R
+  link: /nnc/air/pack/pack-l-r.html
+- name: PACK MODE L
+  link: /nnc/air/pack/pack-mode-l.html
+- name: PACK MODE R
+  link: /nnc/air/pack/pack-mode-r.html
+- name: RECIRC FAN LWR OFF
+  link: /nnc/air/pack/recirc-fan-lwr-off.html
+- name: RECIRC FAN UPR OFF
+  link: /nnc/air/pack/recirc-fan-upr-off.html
+- name: TRIM AIR L
+  link: /nnc/air/pack/trim-air-l.html
+- name: TRIM AIR R
+  link: /nnc/air/pack/trim-air-r.html

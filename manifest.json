@@ -1,0 +1,16 @@
+{
+	"short_name": "B787 ECL",
+	"name": "B787 ECL Emulator",
+	"icons": [
+		{
+			"src": "/assets/images/ios-icon.png",
+			"type": "image/png",
+			"sizes": "180x180"
+		}
+	],
+	"start_url": "/",
+	"background_color": "#000000",
+	"display": "standalone",
+	"theme_color": "#4dbaa8",
+	"orientation": "portrait"
+}

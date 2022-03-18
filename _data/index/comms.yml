@@ -1,0 +1,20 @@
+- name: DATALINK LOST
+  link: /nnc/comms/datalink-lost.html
+- name: DATALINK SYS
+  link: /nnc/comms/datalink-sys.html
+- name: HF DATALINK
+  link: /nnc/comms/hf-datalink.html
+- name: RADIO TRANSMIT CAPT
+  link: /nnc/comms/radio-transmit-capt.html
+- name: RADIO TRANSMIT F/O
+  link: /nnc/comms/radio-transmit-f-o.html
+- name: RADIO TRANSMIT OBS
+  link: /nnc/comms/radio-transmit-obs.html
+- name: SATCOM
+  link: /nnc/comms/satcom.html
+- name: SATCOM DATALINK
+  link: /nnc/comms/satcom-datalink.html
+- name: SATVOICE LOST
+  link: /nnc/comms/satvoice-lost.html
+- name: VHF DATALINK
+  link: /nnc/comms/vhf-datalink.html

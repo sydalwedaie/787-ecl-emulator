@@ -1,0 +1,34 @@
+- name: EQUIP ...
+  link: /nnc/air/equip/index.html
+- name: PACK, RECIRC, TRIM AIR ...
+  link: /nnc/air/pack/index.html
+- name: CABIN ALTITUDE
+  link: /nnc/air/cabin-altitude.html
+- name: CABIN ALTITUDE AUTO
+  link: /nnc/air/cabin-altitude-auto.html
+- name: Cabin Temp Cold
+  link: /nnc/air/cabin-temp-cold.html
+- name: Cabin Temp Hot
+  link: /nnc/air/cabin-temp-hot.html
+- name: CABIN TEMPERATURE
+  link: /nnc/air/cabin-temperature.html
+- name: CARGO HEAT BULK
+  link: /nnc/air/cargo-heat-bulk.html
+- name: CARGO HEAT FWD
+  link: /nnc/air/cargo-heat-fwd.html
+- name: LANDING ALTITUDE
+  link: /nnc/air/landing-altitude.html
+- name: LIQUID CLG QTY L
+  link: /nnc/air/liquid-clg-qty-l.html
+- name: LIQUIO CLG QTY R
+  link: /nnc/air/liquio-clg-qty-r.html
+- name: LIQUID COOLING L
+  link: /nnc/air/liquid-cooling-l.html
+- name: LIQUID COOLING R
+  link: /nnc/air/liquid-cooling-r.html
+- name: OUTFLOW VALVE AFT
+  link: /nnc/air/outflow-valve-aft.html
+- name: OUTFLOW VALVE FWD
+  link: /nnc/air/outflow-valve-fwd.html
+- name: VENTILATION ALTN
+  link: /nnc/air/ventilation-altn.html

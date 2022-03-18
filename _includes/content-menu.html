@@ -1,0 +1,7 @@
+<ul class="content-menu">
+{% for item in site.data.index.[page.index] %}
+    <li class="content-menu-item button-wrap">
+    	<a class="button" href="{{ item.link }}">{{ item.name }}</a>
+    </li>
+{% endfor %}
+</ul>

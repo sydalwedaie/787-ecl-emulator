@@ -1,0 +1,14 @@
+- name: CRUISE FLAPS SYS
+  link: /nnc/flight-controls/flaps/cruise-flaps-sys.html
+- name: FLAP/SLAT CONTROL
+  link: /nnc/flight-controls/flaps/flap-slat-control.html
+- name: FLAPS DRIVE
+  link: /nnc/flight-controls/flaps/flaps-drive.html
+- name: FLAPS PRIMARY FAIL
+  link: /nnc/flight-controls/flaps/flaps-primary-fail.html
+- name: Flaps + Slats Fail
+  link: /nnc/flight-controls/flaps/flaps-slats-fail.html
+- name: SLATS DRIVE
+  link: /nnc/flight-controls/flaps/slats-drive.html
+- name: SLATS PRIMARY FAIL
+  link: /nnc/flight-controls/flaps/slats-primary-fail.html

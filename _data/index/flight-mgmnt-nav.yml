@@ -1,0 +1,16 @@
+- name: NAV AIR DATA SYS
+  link: /nnc/flight-mgmnt/nav/nav-air-data-sys.html
+- name: NAV AIRSPEED DATA
+  link: /nnc/flight-mgmnt/nav/nav-airspeed-data.html
+- name: NAV APPROACH GLS
+  link: /nnc/flight-mgmnt/nav/nav-approach-gls.html
+- name: NAV APPROACH ILS
+  link: /nnc/flight-mgmnt/nav/nav-approach-ils.html
+- name: NAV INERTIAL SYS
+  link: /nnc/flight-mgmnt/nav/nav-inertial-sys.html
+- name: NAV IRU
+  link: /nnc/flight-mgmnt/nav/nav-iru.html
+- name: NAV SINGLE GPS
+  link: /nnc/flight-mgmnt/nav/nav-single-gps.html
+- name: NAV UNABLE RNP
+  link: /nnc/flight-mgmnt/nav/nav-unable-rnp.html
