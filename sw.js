@@ -1,6 +1,9 @@
 const cashe = [
 	"/",
 	"/assets/css/styles.css",
+	"/assets/fonts/futura.eot",
+	"/assets/fonts/futura.ttf",
+	"/assets/fonts/futura.woff",
 	"/normal-menu.html",
 	"/resets.html",
 	"404.html",
