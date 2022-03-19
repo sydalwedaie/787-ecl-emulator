@@ -12,9 +12,6 @@ html {
 	overflow-y: scroll;
 	-webkit-overflow-scrolling: touch;
 
-	position: relative;
-    overflow: hidden;
-    height: 100%;
 }
 
 *, *:before, *:after {
@@ -31,9 +28,6 @@ body {
 	/*background: url(../../assets/images/unannunciated.jpg) center no-repeat;*/
 	/*background: url(../../assets/images/engine.jpg) center no-repeat;*/
 	/*background-size: auto 700px;*/
-	position: relative;
-    overflow: hidden;
-    height: 100%;
 
 }
 
