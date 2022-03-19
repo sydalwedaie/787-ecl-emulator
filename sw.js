@@ -448,12 +448,22 @@ const cashe = [
 	"/nnc/warning/windshear-sys.html"
 ]
 
+var cacheName = "sw-cashe-v06"
 self.addEventListener('install', function (event) {
 
 	event.waitUntil((async () => {
-	    const cache = await caches.open('sw-cashe-v06');
+	    const cache = await caches.open(cacheName);
 	    await cache.addAll(cashe);
 	})());
+});
+
+self.addEventListener('activate', (e) => {
+  e.waitUntil(caches.keys().then((keyList) => {
+    return Promise.all(keyList.map((key) => {
+      if (key === cacheName) { return; }
+      return caches.delete(key);
+    }))
+  }));
 });
 
 self.addEventListener('fetch', function (event) {
