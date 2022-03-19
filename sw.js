@@ -451,7 +451,7 @@ const cashe = [
 self.addEventListener('install', function (event) {
 
 	event.waitUntil((async () => {
-	    const cache = await caches.open('sw-cashe-v01');
+	    const cache = await caches.open('sw-cashe-v06');
 	    await cache.addAll(cashe);
 	})());
 });
