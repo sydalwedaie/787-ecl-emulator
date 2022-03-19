@@ -36,6 +36,7 @@ body {
   src: url("/assets/fonts/futura.eot?#") format("eot"), url("/assets/fonts/futura.ttf") format("truetype"), url("/assets/fonts/futura.woff") format("woff"); }
 
 #container{
+	text-align: center;
 	font-family: "Futura Condensed Medium";
 	background-color: black;
 	color: white;
@@ -118,6 +119,18 @@ body {
 
 
 /* ============================================ */
+.home {
+	
+	width: 400px;
+	margin: 0 auto;
+	line-height: 1.5;
+	padding: 32px;
+	font-size: 110%;
+}
+
+.home h2 {
+	margin-top: 16px;
+}
 
 .content-header h1, .content-header h2, .content-header h3 {
 	font-size: 20px;
