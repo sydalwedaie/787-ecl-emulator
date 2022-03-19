@@ -461,7 +461,7 @@ self.addEventListener('fetch', function (event) {
 		// Try the cache
 		caches.match(event.request).then(function (response) {
 			// return it if there is a response,or else fetch again
-			return response || fetch(event.request);
+			return fetch(event.request) || response;
 		})
 	);
 });
