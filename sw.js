@@ -448,7 +448,7 @@ const cashe = [
 	"/nnc/warning/windshear-sys.html"
 ]
 
-var cacheName = "sw-cashe-v06"
+var cacheName = "sw-cashe-v07"
 self.addEventListener('install', function (event) {
 
 	event.waitUntil((async () => {
