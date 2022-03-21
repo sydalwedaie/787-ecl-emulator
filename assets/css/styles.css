@@ -190,7 +190,13 @@ body {
 
 
 /* ============================================ */
-.checklist-content
+.checklist-title {
+	
+}
+
+.checklist-content {
+	text-align: left;
+}
 
 
 /* ============================================ */
