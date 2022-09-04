@@ -28,15 +28,15 @@ const fonts = [{% for file in site.static_files %}{% if file.path contains 'font
 const other = [
 	"/assets/css/style.css",
 	"/assets/images/checklist-end.png",
-	"/assets/images/bisb-iban-qr-code.png",
+	"/assets/images/bisb-iban-qr-code.jpeg",
 	"/assets/js/clipboard.min.js",
 	"/assets/js/script.js",
-	"404.html",
+	"/404.html",
 	"/"
 ]
 
 
-const all_assets = [...nnc, ...nc, ...checklist_content, ...info, ...fonts, ...other]
+const all_assets = [...nnc]
 
 var cacheName = "ecl-cache-002"
 self.addEventListener('install', function (event) {
