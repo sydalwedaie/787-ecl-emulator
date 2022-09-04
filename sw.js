@@ -21,6 +21,7 @@ const fonts = [{% for file in site.static_files %}{% if file.path contains 'font
 ]
 
 const other = [
+	"/nc/index.html",
 	"/assets/css/style.css",
 	"/assets/images/checklist-end.png",
 	"/assets/images/bisb-iban-qr-code.jpeg",
