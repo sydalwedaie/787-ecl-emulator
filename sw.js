@@ -2,27 +2,22 @@
 ---
 const nnc = [{% for page in site.pages %}{% if page.path contains 'nnc' %}
 	"/{{ page.path }}",{% endif %}{% endfor %}
-	""
 ]
 
 const nc = [{% for item in site.data.index["nc"] %}
 	"{{item.link}}",{% endfor %}
-	""
 ]
 
 const checklist_content = [{% for image in site.static_files %}{% if image.path contains 'assets/checklist-content' %}
 	"{{ image.path }}",{% endif %}{% endfor %}
-	""
 ]
 
 const info = [{% for page in site.pages %}{% if page.path contains 'info' %}
 	"/{{ page.path }}",{% endif %}{% endfor %}
-	""
 ]
 
 const fonts = [{% for file in site.static_files %}{% if file.path contains 'fonts' %}
 	"{{ file.path }}",{% endif %}{% endfor %}
-	""
 ]
 
 const other = [
@@ -36,7 +31,7 @@ const other = [
 ]
 
 
-const all_assets = [...nnc]
+const all_assets = [...nnc, ...nc, ...checklist_content, ...info, ...fonts, ...other]
 
 var cacheName = "ecl-cache-002"
 self.addEventListener('install', function (event) {
