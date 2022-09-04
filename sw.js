@@ -21,7 +21,7 @@ const info = [{% for page in site.pages %}{% if page.path contains 'info' %}
 ]
 
 const fonts = [{% for file in site.static_files %}{% if file.path contains 'fonts' %}
-		"{{ file.path }}",{% endif %}{% endfor %}
+	"{{ file.path }}",{% endif %}{% endfor %}
 	""
 ]
 
@@ -36,9 +36,9 @@ const other = [
 ]
 
 
-const cache = [].concat(nnc, nc, checklist_content, info, fonts, other);
+const cache = [...nnc, ...nc, ...checklist_content, ...info, ...fonts, ...other];
 
-var cacheName = "sw-cache-v50"
+var cacheName = "ecl-cache-001"
 self.addEventListener('install', function (event) {
 
 	event.waitUntil((async () => {
