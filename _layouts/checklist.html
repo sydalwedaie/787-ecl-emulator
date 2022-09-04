@@ -2,13 +2,16 @@
 layout: default
 ---
 <div class="content">
-	<h1 class="checklist-title">&#x25B6;&#xFE0E;{{page.title}}&#x25C0;&#xFE0E;</h1>
+	<div class="content-header">
+		<h1 class="checklist-title">&#x25B6;&#xFE0E;{{page.title}}&#x25C0;&#xFE0E;</h1>
+	</div>
+	
 	<div class="checklist-content">
-		<h2>Condition: {{page.condition}}</h2>
-		{% if page.objective %}
-		<h2>Objective: {{page.objective}}</h2>
-		{% endif %}
-
-		{{ content }}
+		{% for img in page.img %}
+		<img src="/assets/checklist-content/{{img}}.png">
+		{% endfor %}
+		
+		<img class="checklist-end-symbol" src="/assets/images/checklist-end.png">
 	</div>
 </div>
+

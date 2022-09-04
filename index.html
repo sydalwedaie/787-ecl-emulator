@@ -1,33 +1,27 @@
 ---
-layout: default
-title: Home
+layout: app-info
+title: 787 ECL Emulator
 ---
-<div class="home">
-	<h1>B787 ECL Emulator</h1>
-
-	<h2>Installation:</h2>
-	<p><u>iOS:</u> In Safari, tap on the share icon, then Add to Home Screen.</p>
-	<p><u>Android:</u> In Chrome, tap the three dot icon on the top, then Add to Home Screen.</p>
-	<p>Launch the app at least once before going offline. It should then work even when offline.</p>
-
-	<h2>The Goal:</h2>
-	<p>For now, it's just a glorified table of contents. The actual checklists are not yet implemented. Use it to simply train your muscle memory to <em>find</em> checklists quickly and efficiently.</p>
-
-	<h2>Disclaimer</h2>
-	<p>This is not an official document. It's not meant to be used for operation nor for training. </p>
-
-	<p>Last Updated: {{ "now" | date: "%Y-%m-%d %H:%M" }}</p>
-</div>
-
-<!--
-{% for index in site.data.nnc-index %}
-	{% assign short-name = index.short-name %}
-    {% for item in site.data.index.[short-name] %}
-	    <li>"{{item.link}}",</li>
-	{% endfor %}
-{% endfor %}
--->
-
-
-
-
+<ul class="content-menu">
+    <li class="content-menu-item button-wrap">
+    	<a class="button" href="info/ios-installation-guide.html">iOS INSTALLATION GUIDE</a>
+    </li>
+    <li class="content-menu-item button-wrap">
+    	<a class="button" href="info/android-installation-guide.html">ANDROID INSTALLATION GUIDE</a>
+    </li>
+    <li class="content-menu-item button-wrap">
+    	<a class="button" href="https://www.buymeacoffee.com/sydalwedaie" target="_blank" rel="noopener noreferrer">BUY ME A COFFEE! (INTERNATIONAL)</a>
+    </li>
+    <li class="content-menu-item button-wrap">
+    	<a class="button" href="info/support-fawri.html">SUPPORT WITH FAWRI (BAHRAIN)</a>
+    </li>
+    <li class="content-menu-item button-wrap">
+    	<a class="button" href="info/updates-log.html">UPDATES LOG ({{site.last_updated}})</a>
+    </li>
+    <li class="content-menu-item button-wrap">
+    	<a class="button" href="https://www.linkedin.com/in/sydalwedaie/" target="_blank" rel="noopener noreferrer">MY LINKED IN</a>
+    </li>
+    <li class="content-menu-item button-wrap">
+    	<a class="button" href="info/about.html">ABOUT</a>
+    </li>
+</ul>

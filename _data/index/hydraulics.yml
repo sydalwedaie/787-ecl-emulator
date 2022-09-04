@@ -17,15 +17,15 @@
 - name: HYD PRESS SYS L
   link: /nnc/hydraulics/hyd-press-sys-l.html
 - name: HYD PRESS SYS L+C
-  link: /nnc/hydraulics/hyd-press-sys-l-c.html
+  link: /nnc/hydraulics/hyd-press-sys-l+c.html
 - name: HYD PRESS SYS L+C+R
-  link: /nnc/hydraulics/hyd-press-sys-l-c-r.html
+  link: /nnc/hydraulics/hyd-press-sys-l+c+r.html
 - name: HYD PRESS SYS L+R
-  link: /nnc/hydraulics/hyd-press-sys-l-r.html
+  link: /nnc/hydraulics/hyd-press-sys-l+r.html
 - name: HYD PRESS SYS R
   link: /nnc/hydraulics/hyd-press-sys-r.html
 - name: HYD PRESS SYS R+C
-  link: /nnc/hydraulics/hyd-press-sys-r-c.html
+  link: /nnc/hydraulics/hyd-press-sys-r+c.html
 - name: HYD QTY LOW C
   link: /nnc/hydraulics/hyd-qty-low-c.html
 - name: HYD QTY LOW L

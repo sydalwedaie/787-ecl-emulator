@@ -1,0 +1,355 @@
+---
+---
+@charset "utf-8"
+
+// ==============================
+// Variables
+// ==============================
+
+$global-background-color: #212121
+$test-color: yellow 
+
+
+a, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, body, html, p, blockquote, fieldset, input, button 
+    margin: 0
+    padding: 0
+
+html 
+    -webkit-box-sizing: border-box
+    -moz-box-sizing: border-box
+    box-sizing: border-box
+    
+    -ms-touch-action: manipulation
+    touch-action: manipulation
+    overflow-y: scroll
+
+*, *:before, *:after 
+    box-sizing: inherit
+
+a 
+    text-decoration: none
+    color: white
+
+ul 
+    list-style-type: none
+
+body 
+    background-color: $global-background-color
+    -webkit-tap-highlight-color: transparent
+    -webkit-user-select: none
+    -moz-user-select: none
+    -ms-user-select: none
+    user-select: none
+    -webkit-touch-callout: none
+
+body::-webkit-scrollbar 
+    display: none
+
+@font-face 
+    font-family: 'Futura Condensed Medium'
+    src: url("/assets/fonts/futura.eot?#") format("eot"), url("/assets/fonts/futura.ttf") format("truetype"), url("/assets/fonts/futura.woff") format("woff") 
+
+@font-face
+  font-family: 'Roboto Mono'
+  font-style: normal
+  font-weight: 400
+  src: url('/assets/fonts/roboto-mono-v22-latin-regular.eot')
+  src: local(""), url('/assets/fonts/roboto-mono-v22-latin-regular.eot?#iefix') format("embedded-opentype"), url('/assets/fonts/roboto-mono-v22-latin-regular.woff2') format("woff2"), url('/assets/fonts/roboto-mono-v22-latin-regular.woff') format("woff"), url('/assets/fonts/roboto-mono-v22-latin-regular.ttf') format("truetype"), url('/assets/fonts/roboto-mono-v22-latin-regular.svg#RobotoMono') format("svg")
+
+@font-face
+  font-family: 'Roboto Mono'
+  font-style: normal
+  font-weight: 600
+  src: url('/assets/fonts/roboto-mono-v22-latin-600.eot')
+  src: local(""), url('/assets/fonts/roboto-mono-v22-latin-600.eot?#iefix') format("embedded-opentype"), url('/assets/fonts/roboto-mono-v22-latin-600.woff2') format("woff2"), url('/assets/fonts/roboto-mono-v22-latin-600.woff') format("woff"), url('/assets/fonts/roboto-mono-v22-latin-600.ttf') format("truetype"), url('/assets/fonts/roboto-mono-v22-latin-600.svg#RobotoMono') format("svg")
+
+#container
+    text-align: center
+    font-family: 'Roboto Mono', monospace
+    color: white
+    width: 100vw
+    min-height: 100vh
+    margin: 0 auto
+    background-color: black
+    //letter-spacing: -0.4px 
+
+
+// ============================================ 
+// BUTTON GENERAL
+// ============================================ 
+.button 
+    display: block
+    line-height: 1
+    padding: 0 5px //m
+    background-color: #737175
+
+    border-style: solid
+    border-width: 2px //m
+    border-top-color: #a19ea5
+    border-left-color: #a19ea5
+    border-right-color: #464548
+    border-bottom-color: #464548
+    
+    display: flex
+    flex-direction: column
+    justify-content: center
+
+    &.active 
+        background-color: #3e6b2b // green 
+        border-top-color: #2c2c2c
+        border-left-color: #2c2c2c
+        border-right-color: #a1a1a1
+        border-bottom-color: #a1a1a1
+
+.button-wrap 
+    padding: 1.5px //m
+    background-color: black
+    border-radius: 2px //m
+
+    &:hover
+        background-color: #ff00ca
+
+        .button
+            border: 2px solid #ff00ca
+
+.button:focus 
+    border: 2px solid #ff00ca
+
+
+
+.button:active 
+    background-color: #3e6b2b
+
+.alert
+    background-color: #f9da57
+    color: #212121
+    font-size: 12px
+
+
+// ============================================ 
+// HEADER
+// ============================================ 
+.navigation-menu 
+    background-color: black
+    display: flex
+    position: sticky
+    top: 0px
+    padding: 2px 2px 0
+    font-size: 11px //m
+    height: 30px
+
+.navigation-menu-item 
+    width: 33.33%
+
+    .button
+        height: 100%
+        padding: 0 5px
+
+    &.button-wrap
+        
+// ============================================ 
+// CHECKLIST CONTENT
+// ============================================ 
+
+.content-header 
+    position: sticky
+    top: 30px
+    background-color: black
+    padding: 0 2px
+
+    h1, h2, h3
+        font-size: 15px //m
+        font-weight: 600
+        height: 37px
+        display: flex
+        flex-direction: column
+        justify-content: center
+
+    .button 
+        height: 100%
+
+
+.content-level-1 
+    height: 515px
+
+.content-level-2 
+    height: 455px
+
+.content-level-3 
+    height: 420px
+
+.content-menu 
+    display: flex
+    flex-direction: column
+    flex-wrap: wrap
+    height: 100%
+    background-color: black
+    font-size: 11px //m
+    padding: 0 2px
+
+    &.unannunciated .content-menu-item:nth-child(12), &.fire .content-menu-item:nth-child(12)
+        visibility: hidden
+
+
+.content-menu-item 
+    .button 
+        height: 100%
+        text-align: left
+
+    &.button-wrap 
+        height: 37px
+        width: 50%
+
+
+.checklist-content 
+    max-width: 550px
+    margin: 0 auto
+
+    img 
+        width: 100%
+
+    .checklist-end-symbol 
+        padding-top: 10px
+        padding-bottom: 100px
+
+// ============================================ 
+// INFO
+// ============================================ 
+.info 
+    h3 
+        text-align: left
+        padding-left: 16px
+
+    p 
+        padding: 16px
+        text-align: left
+        max-width: 500px
+
+
+#iban-qr-code 
+    float: left
+    padding: 0 2px
+    width: 50%
+
+// ============================================ 
+// FOOTER
+// ============================================ 
+.footer 
+    clear: both
+
+.footer-item 
+    float: right
+    
+    .button 
+        width: 80px
+        height: 49px
+        padding: 0 9px
+        text-align: center
+
+// ============================================ 
+// Media Queries
+// ============================================ 
+@media only screen and (min-height: 607px) and (min-width: 360px)
+         
+
+    .navigation-menu
+        height: 5vh
+
+    .content-header
+        top: 5vh
+
+        h1, h2, h3
+            height: 6.1vh
+
+    .content-level-1 
+        height: 85vh //m
+
+    .content-level-2 
+        height: 78vh //m
+
+    .content-level-3 
+        height: 73vh //m
+
+    .content-menu-item.button-wrap
+        height: 6.1vh
+
+    .navigation-menu, .content-menu
+        font-size: 13px
+        font-weight: 600
+
+
+@media only screen and (min-height: 1000px)
+    .navigation-menu, .content-header h1, .content-header h2, .content-header h3, .content-menu, .alert
+        font-size: 20px
+        font-weight: 600
+
+    .button
+        
+        border-width: 2.5px
+
+    .button-wrap
+        padding: 2px
+
+    .content-menu .button
+        padding-right: 95px
+        padding-left: 10px
+
+@media only screen and (min-height: 1300px)
+    .navigation-menu, .content-header h1, .content-header h2, .content-header h3, .content-menu
+        font-size: 24px
+
+    .button
+        border-width: 4px
+
+    .button-wrap
+        padding: 3px
+    
+
+@media only screen and (orientation: landscape)
+    #container
+        max-width: 768px
+
+    .content-menu .button
+        padding-right: 140px
+
+// ============================================ 
+// Testing Fixed Nav
+// ============================================ 
+
+
+
+// ============================================ 
+// Scratch Pad
+// ============================================ 
+
+// .navigation-menu 
+//     background-color: black
+//     width: 100vw
+//     position: fixed
+//     top: 2px
+//         
+//     
+// 
+// .navigation-menu-item 
+//     width: 33.33%
+//     display: block
+//     float: left
+// 
+// 
+// .content-header 
+//     position: fixed
+//     top:  42px
+//     width: 100vw
+// 
+// 
+// .content-level-1, .checklist-content 
+//     margin-top:  84px
+// 
+// .content-level-2, .home 
+//     margin-top:  126px
+// 
+// .content-level-3 
+//     margin-top:  168px
+// 
+
+

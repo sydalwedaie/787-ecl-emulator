@@ -6,9 +6,9 @@
   link: /nnc/air/equip/equip-cooling-aft.html
 - name: EQUIP COOLING FWD
   link: /nnc/air/equip/equip-cooling-fwd.html
-- name: EQUIP OVBO VLV AFT
-  link: /nnc/air/equip/equip-ovbo-vlv-aft.html
+- name: EQUIP OVBD VLV AFT
+  link: /nnc/air/equip/equip-ovbd-vlv-aft.html
 - name: EQUIP OVRD VLV AFT
   link: /nnc/air/equip/equip-ovrd-vlv-aft.html
-- name: EQUIP OVRO VLV FWD
-  link: /nnc/air/equip/equip-ovro-vlv-fwd.html
+- name: EQUIP OVRD VLV FWD
+  link: /nnc/air/equip/equip-ovrd-vlv-fwd.html

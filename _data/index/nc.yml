@@ -1,0 +1,20 @@
+- name: PREFLIGHT
+  link: /nc/preflight.html
+- name: BEFORE START
+  link: /nc/before-start.html
+- name: BEFORE TAXI
+  link: /nc/before-taxi.html
+- name: BEFORE TAKEOFF
+  link: /nc/before-takeoff.html
+- name: AFTER TAKEOFF
+  link: /nc/after-takeoff.html
+- name: DESCENT
+  link: /nc/descent.html
+- name: APPROACH
+  link: /nc/approach.html
+- name: LANDING
+  link: /nc/landing.html
+- name: SHUTDOWN
+  link: /nc/shutdown.html
+- name: SECURE
+  link: /nc/secure.html

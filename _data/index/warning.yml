@@ -10,12 +10,12 @@
   link: /nnc/warning/aural-canceled.html
 - name: GND PROX SYS
   link: /nnc/warning/gnd-prox-sys.html
-- name: GPS FLAP OVRD
-  link: /nnc/warning/gps-flap-ovrd.html
-- name: GPS GEAR OVRD
-  link: /nnc/warning/gps-gear-ovrd.html
-- name: GPS TERR OVRD
-  link: /nnc/warning/gps-terr-ovrd.html
+- name: GPWS FLAP OVRD
+  link: /nnc/warning/gpws-flap-ovrd.html
+- name: GPWS GEAR OVRD
+  link: /nnc/warning/gpws-gear-ovrd.html
+- name: GPWS TERR OVRD
+  link: /nnc/warning/gpws-terr-ovrd.html
 - name: OVERSPEED
   link: /nnc/warning/overspeed.html
 - name: PILOT RESPONSE

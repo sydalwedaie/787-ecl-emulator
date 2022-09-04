@@ -1,29 +1,55 @@
 <!doctype html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
+    <meta name="description" content="{{site.description}}">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="robots" content="noindex, nofollow">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1 initial-scale=1 user-scalable=no">
 
-    <link rel="apple-touch-icon" href="/assets/images/ios-icon.png">
-    <link rel="stylesheet" href="/assets/css/styles.css">
-
-    <meta name= "theme-color" content="#00777C" />
-    <link rel="manifest" href="/manifest.json">
-
+    <!-- Android  -->
     <meta name="mobile-web-app-capable" content="yes">
+    <meta name= "theme-color" content="#212121" />
+
+    <!-- iOS -->
+    <meta name="apple-mobile-web-app-title" content="{{site.title}}">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
 
-    <title>{{ page.title }}</title>
+    <link rel="apple-touch-icon" href="/assets/images/icons/icon-180.png">
+    <link rel="manifest" href="/app.webmanifest">
+    <link rel="stylesheet" href="/assets/css/style.css">
 
+    <!-- <meta name="screen-orientation" content="portrait"> -->
+
+    <link href="/assets/images/icons/favicon-16.png" rel="icon" type="image/png" sizes="16x16">
+    <link href="/assets/images/icons/favicon-32.png" rel="icon" type="image/png" sizes="32x32">
+    <link href="/assets/images/icons/favicon-48.png" rel="icon" type="image/png" sizes="48x48">
+
+    <!-- Android  -->
+    <link href="/assets/images/icons/icon-192.png" rel="icon" sizes="192x192">
+    <link href="/assets/images/icons/icon-128.png" rel="icon" sizes="128x128">
+
+
+    {% include apple-splash-meta-tags.html %}
+
+    <title>
+      {% if page.title-level-3 %}
+        {{ page.title-level-3 | upcase }}
+      {% elsif page.title-level-2 %}
+        {{ page.title-level-2 | upcase }}
+      {% else %}
+        {{ page.title }}
+      {% endif %}
+    </title>
+    
     <script type="text/javascript">
       if ("serviceWorker" in navigator) {
         navigator.serviceWorker.register("/sw.js");
       };
-      
+   
     </script>
+    
   </head>
   <body>
     <div id="container">
@@ -33,5 +59,8 @@
       {% include footer-menu.html %}
       -->
     </div>
+    <script type="text/javascript" src="/assets/js/clipboard.min.js"></script>
+    <script type="text/javascript" src="/assets/js/script.js"></script>
   </body>
 </html>
+

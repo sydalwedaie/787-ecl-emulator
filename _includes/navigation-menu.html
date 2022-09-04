@@ -1,11 +1,13 @@
+{% assign current = page.url | downcase | split: '/' %}
+
 <ul class="navigation-menu">
 	<li class="navigation-menu-item button-wrap">
-		<a class="button {% if page.url == '/nnc/index.html' %}active{% endif %}" href="/normal-menu.html">NORMAL MENU</a>
+		<a class="button {% if current[1] == 'nc' %}active{% endif %}" href="/nc/index.html">NORMAL MENU</a>
 	</li>
 	<li class="navigation-menu-item button-wrap">
-		<a class="button {% if page.url == '/resets.html' %}active{% endif %}" href="/resets.html">RESETS</a>
+		<a class="button {% if page.url == '/' %}active{% endif %}" href="/">RESETS</a>
 	</li>
 	<li class="navigation-menu-item button-wrap">
-		<a class="button {% if page.url == '/nnc/index.html' %}active{% endif %}" href="/nnc/index.html">NON-NORMAL MENU</a>
+		<a class="button {% if current[1] == 'nnc' %}active{% endif %}" href="/nnc/index.html">NON-NORMAL MENU</a>
 	</li>
 </ul>

@@ -22,8 +22,8 @@
   link: /nnc/flight-mgmnt/lnav-bank-angle-lim.html
 - name: RWY/APP CRS ERROR
   link: /nnc/flight-mgmnt/rwy-app-crs-error.html
-- name: RHY/APP TUNE ERROR
-  link: /nnc/flight-mgmnt/rhy-app-tune-error.html
+- name: RWY/APP TUNE ERROR
+  link: /nnc/flight-mgmnt/rwy-app-tune-error.html
 - name: SGL SOURCE APPROACH
   link: /nnc/flight-mgmnt/sgl-source-approach.html
 - name: SINGLE SOURCE F/D
