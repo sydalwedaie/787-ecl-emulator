@@ -5,7 +5,7 @@
     <meta name="description" content="{{site.description}}">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="robots" content="noindex, nofollow">
-    <meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1 initial-scale=1 user-scalable=no">
+    <meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1, initial-scale=1, user-scalable=no">
 
     <!-- Android  -->
     <meta name="mobile-web-app-capable" content="yes">
@@ -30,8 +30,21 @@
     <link href="/assets/images/icons/icon-192.png" rel="icon" sizes="192x192">
     <link href="/assets/images/icons/icon-128.png" rel="icon" sizes="128x128">
 
-
+    {% if page.url == "/" %}
     {% include apple-splash-meta-tags.html %}
+    {% endif %}
+
+    {% if page.url == "/nc/" %}
+    {% include apple-splash-meta-tags.html %}
+    {% endif %}
+
+    {% if page.url == "/nnc/" %}
+    {% include apple-splash-meta-tags.html %}
+    {% endif %}
+
+    {% if page.url contains "info" %}
+    {% include apple-splash-meta-tags.html %}
+    {% endif %}
 
     <title>
       {% if page.title-level-3 %}
@@ -41,8 +54,8 @@
       {% else %}
         {{ page.title }}
       {% endif %}
-    </title>
-    
+    </title> 
+
     <script type="text/javascript">
       if ("serviceWorker" in navigator) {
         navigator.serviceWorker.register("/sw.js");
@@ -59,6 +72,10 @@
       {% include footer-menu.html %}
       -->
     </div>
+
+    {% if page.url == "/info/support-fawri.html" %}
+    <script type="text/javascript" src="/assets/js/clipboard.min.js"></script>
+    {% endif %}
     <script type="text/javascript" src="/assets/js/clipboard.min.js"></script>
     <script type="text/javascript" src="/assets/js/script.js"></script>
   </body>

@@ -1,4 +1,4 @@
-title: 787 ECL EMULATOR
+title: 787 ECL Emulator
 email: your-email@example.com
 description: >- # this means to ignore newlines until "baseurl:"
   This is a 787 ECL emulator. It is cross platform and it can be installed for offline access. The format is based on the paper QRH of one specific airline.
