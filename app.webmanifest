@@ -2,11 +2,10 @@
 ---
 {
 	"short_name": "787 ECL",
-	"name": "787 ECL Emulator",
+	"name": "{{site.title}}",
 	"description": "{{site.description}}",
 	"categories": ["education"],
 	"icons": [
-		
 		{
 		    "src": "/assets/images/icons/icon-512.png",
 		    "sizes": "512x512",
@@ -32,6 +31,7 @@
 		    "purpose": "maskable"
 		}
 	],
+
 	"start_url": "/",
 	"background_color": "#089cb9",
 	"display": "standalone",
@@ -46,7 +46,8 @@
 	  },
 	  {
 	    "name": "NORMAL MENU",
-	    "url": "/nc/index.html"
+	    "url": "/nc/index.html",
+	    "description": "Normal Menu Items"
 	  }
 	]
 }

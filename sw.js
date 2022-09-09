@@ -28,13 +28,14 @@ const other = [
 	"/assets/js/clipboard.min.js",
 	"/assets/js/script.js",
 	"/404.html",
+	"/offline.html",
 	"/"
 ]
 
 
 const all_assets = [...nnc, ...nc, ...checklist_content, ...info, ...fonts, ...other]
 
-var cacheName = "ecl-cache-005"
+var cacheName = "ecl-cache-006"
 self.addEventListener('install', function (event) {
 
 	event.waitUntil((async () => {
@@ -58,6 +59,6 @@ self.addEventListener('fetch', function (event) {
 		caches.match(event.request).then(function (response) {
 			// return it if there is a response,or else fetch again
 			return response || fetch(event.request);
-		})
+		}).catch(() => caches.match('/offline.html'))
 	);
 });
