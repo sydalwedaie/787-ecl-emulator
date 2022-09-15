@@ -3,15 +3,16 @@ layout: default
 ---
 <div class="content">
 	<div class="content-header">
-		<h1 class="checklist-title">&#x25B6;&#xFE0E;{{page.title}}&#x25C0;&#xFE0E;</h1>
+		<h1 class="checklist-title">&#x25B6;&#xFE0E; {{page.title}} &#x25C0;&#xFE0E;</h1>
 	</div>
 	
 	<div class="checklist-content">
+		<div class="overlay"></div>
 		{% for img in page.img %}
 		<img src="/assets/checklist-content/{{img}}.png">
 		{% endfor %}
 		
-		<img class="checklist-end-symbol" src="/assets/images/checklist-end.png">
+		<img class="checklist-end-symbol" src="/assets/images/content/checklist-end.png">
 	</div>
 </div>
 

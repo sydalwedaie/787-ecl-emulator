@@ -1,11 +1,10 @@
 ---
 ---
-const nnc = [{% for page in site.pages %}{% if page.path contains 'nnc' %}
-	"/{{ page.path }}",{% endif %}{% endfor %}
-]
-
 const nc = [{% for item in site.data.index["nc"] %}
 	"{{item.link}}",{% endfor %}
+]
+const nnc = [{% for page in site.pages %}{% if page.path contains 'nnc' %}
+	"/{{ page.path }}",{% endif %}{% endfor %}
 ]
 
 const checklist_content = [{% for image in site.static_files %}{% if image.path contains 'assets/checklist-content' %}
@@ -20,20 +19,24 @@ const fonts = [{% for file in site.static_files %}{% if file.path contains 'font
 	"{{ file.path }}",{% endif %}{% endfor %}
 ]
 
+const content_images = [{% for file in site.static_files %}{% if file.path contains 'images/content' %}
+	"{{ file.path }}",{% endif %}{% endfor %}
+]
+
+const scripts = [{% for file in site.static_files %}{% if file.path contains 'assets/js' %}
+	"{{ file.path }}",{% endif %}{% endfor %}
+]
+
 const other = [
 	"/nc/index.html",
 	"/assets/css/style.css",
-	"/assets/images/checklist-end.png",
-	"/assets/images/bisb-iban-qr-code.jpeg",
-	"/assets/js/clipboard.min.js",
-	"/assets/js/script.js",
 	"/404.html",
 	"/offline.html",
 	"/"
 ]
 
 
-const all_assets = [...nnc, ...nc, ...checklist_content, ...info, ...fonts, ...other]
+const all_assets = [...nnc, ...nc, ...checklist_content, ...info, ...fonts, ...content_images, ...scripts,  ...other]
 
 var cacheName = "ecl-cache-006"
 self.addEventListener('install', function (event) {

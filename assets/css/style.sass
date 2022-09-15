@@ -42,6 +42,8 @@ body
     user-select: none
     -webkit-touch-callout: none
 
+    //background-image: url("/assets/images/content/not-for-official-use.png")
+
 body::-webkit-scrollbar 
     display: none
 
@@ -67,7 +69,6 @@ body::-webkit-scrollbar
     min-height: 100vh
     margin: 0 auto
     background-color: black
-    //letter-spacing: -0.4px 
 
 
 // ============================================ 
@@ -128,11 +129,13 @@ body::-webkit-scrollbar
 .navigation-menu 
     background-color: black
     display: flex
-    position: sticky
+    position: fixed
+    width: 100%
     top: 0px
     padding: 2px 2px 0
     font-size: 11px //m
-    height: 30px
+    min-height: 37px
+    z-index: 100
 
 .navigation-menu-item 
     width: 33.33%
@@ -148,10 +151,12 @@ body::-webkit-scrollbar
 // ============================================ 
 
 .content-header 
-    position: sticky
-    top: 30px
+    position: fixed
+    width: 100%
+    top: 37px
     background-color: black
     padding: 0 2px
+    z-index: 100
 
     h1, h2, h3
         font-size: 15px //m
@@ -166,13 +171,16 @@ body::-webkit-scrollbar
 
 
 .content-level-1 
-    height: 515px
+    padding-top: 74px
+    height: 590px
 
 .content-level-2 
-    height: 455px
+    padding-top: 111px
+    height: 565px
 
 .content-level-3 
-    height: 420px
+    padding-top: 148px
+    height: 570px
 
 .content-menu 
     display: flex
@@ -198,15 +206,34 @@ body::-webkit-scrollbar
 
 
 .checklist-content 
-    max-width: 550px
+    padding-top: 74px
+    min-height: 80vh
+    max-width: 400px
     margin: 0 auto
+
+    overflow: hidden;
+    position: relative;
 
     img 
         width: 100%
+        //opacity: 0.5
 
     .checklist-end-symbol 
         padding-top: 10px
         padding-bottom: 100px
+
+
+    .overlay
+        height: 100%
+        position: absolute
+        top: 74px
+        width: 100%
+        background-image: url("/assets/images/content/not-for-official-use-small-4-darker.png")
+        opacity: 0.2
+        //background-repeat: repeat-y
+        background-size: 50%
+
+        
 
 // ============================================ 
 // INFO
@@ -245,26 +272,28 @@ body::-webkit-scrollbar
 // ============================================ 
 // Media Queries
 // ============================================ 
-@media only screen and (min-height: 607px) and (min-width: 360px)
+@media only screen and (min-height: 607px) and (min-width: 370px)
          
-
     .navigation-menu
-        height: 5vh
+        
 
     .content-header
-        top: 5vh
 
         h1, h2, h3
             height: 6.1vh
+            font-size: 18px
 
     .content-level-1 
-        height: 85vh //m
+        padding-top: calc(6.1vh + 37px)
+        height: 96vh //m
 
     .content-level-2 
-        height: 78vh //m
+        padding-top: calc(12.2vh + 37px)
+        height: 96vh //m
 
     .content-level-3 
-        height: 73vh //m
+        padding-top: calc(18.3vh + 37px)
+        height: 96vh //m
 
     .content-menu-item.button-wrap
         height: 6.1vh
@@ -273,19 +302,48 @@ body::-webkit-scrollbar
         font-size: 13px
         font-weight: 600
 
+    .checklist-content 
+        padding-top: calc(6.1vh + 37px)
+        padding-left: 5px
+        padding-right: 5px
+        max-width: 550px
 
-@media only screen and (min-height: 740px)
-    .navigation-menu, .content-header h1, .content-header h2, .content-header h3, .content-menu, .alert
-        font-size: 17px
+
+@media only screen and (min-height: 740px) and (min-width: 500px)
+    .navigation-menu
+        height: 5vh
+    .navigation-menu, .content-menu, .alert
+        font-size: 16px
+
+    .content-header
+        top: 5vh
+        h1, h2, h3
+            font-size: 20px
+
+    .content-level-1 
+        padding-top: 11.1vh
+        height: 96vh //m
+
+    .content-level-2 
+        padding-top: 17.2vh
+        height: 96vh //m
+
+    .content-level-3 
+        padding-top: 23.3vh
+        height: 96vh //m
+
+    .checklist-content 
+        padding-top: 11.1vh
 
 
-@media only screen and (min-height: 950px)
+@media only screen and (min-height: 950px) and (min-width: 570px)
     .navigation-menu, .content-menu, .alert
         font-size: 20px
         font-weight: 600
 
-    .content-header h1, .content-header h2, .content-header h3
-        font-size: 24px
+    .content-header
+        h1, h2, h3
+            font-size: 24px
 
     .button
         border-width: 2.5px
@@ -297,23 +355,30 @@ body::-webkit-scrollbar
         //padding-right: 95px
         padding-left: 10px
 
-@media only screen and (min-height: 1300px)
+@media only screen and (min-height: 1300px) and (min-width: 670px)
     .navigation-menu, .content-menu
         font-size: 24px
+
+    .content-header
+        h1, h2, h3
+            font-size: 28px
 
     .button
         border-width: 4px
 
     .button-wrap
         padding: 3px
+
+    .checklist-content 
+        max-width: 650px
     
 
 @media only screen and (orientation: landscape)
     #container
         max-width: 768px
 
-    .content-menu .button
-        //padding-right: 140px
+    .navigation-menu, .content-header
+        max-width: 768px
 
 // ============================================ 
 // Testing Fixed Nav
