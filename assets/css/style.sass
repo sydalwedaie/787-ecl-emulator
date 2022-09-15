@@ -120,7 +120,7 @@ body::-webkit-scrollbar
 .alert
     background-color: #f9da57
     color: #212121
-    font-size: 12px
+    font-size: 11px
 
 
 // ============================================ 
@@ -247,6 +247,15 @@ body::-webkit-scrollbar
         padding: 16px
         text-align: left
         max-width: 500px
+        font-size: 13px
+
+    img
+        width: 75%
+        max-width: 400px
+
+    &.content-level-2
+        height: 100%
+        padding-bottom: 100px
 
 
 #iban-qr-code 
@@ -298,7 +307,7 @@ body::-webkit-scrollbar
     .content-menu-item.button-wrap
         height: 6.1vh
 
-    .navigation-menu, .content-menu
+    .navigation-menu, .content-menu, .alert
         font-size: 13px
         font-weight: 600
 
@@ -312,7 +321,7 @@ body::-webkit-scrollbar
 @media only screen and (min-height: 740px) and (min-width: 500px)
     .navigation-menu
         height: 5vh
-    .navigation-menu, .content-menu, .alert
+    .navigation-menu, .content-menu, .alert, .info p
         font-size: 16px
 
     .content-header
@@ -337,7 +346,7 @@ body::-webkit-scrollbar
 
 
 @media only screen and (min-height: 950px) and (min-width: 570px)
-    .navigation-menu, .content-menu, .alert
+    .navigation-menu, .content-menu, .alert, .info p
         font-size: 20px
         font-weight: 600
 
@@ -356,7 +365,7 @@ body::-webkit-scrollbar
         padding-left: 10px
 
 @media only screen and (min-height: 1300px) and (min-width: 670px)
-    .navigation-menu, .content-menu
+    .navigation-menu, .content-menu, .info p
         font-size: 24px
 
     .content-header
@@ -380,6 +389,9 @@ body::-webkit-scrollbar
     .navigation-menu, .content-header
         max-width: 768px
 
+@media only screen and (display-mode: standalone)
+    .no-display
+        display: none
 // ============================================ 
 // Testing Fixed Nav
 // ============================================ 
