@@ -1,16 +1,16 @@
-- name: DAMAGE, FAIL, SHUTDOWN, THRUST ...
+- name: DAMAGE, FAIL,</br>SHUTDOWN, THRUST&nbsp;...
   link: /nnc/engine/damage/index.html
-- name: LIMIT, OIL, REVERSER ...
+- name: LIMIT, OIL,</br>REVERSER&nbsp;...
   link: /nnc/engine/limit/index.html
-- name: RPM, START, STARTER ...
+- name: RPM, START,</br>STARTER&nbsp;...
   link: /nnc/engine/rpm/index.html
 - name: ENG CONTROL L
   link: /nnc/engine/eng-control-l.html
 - name: ENG CONTROL R
   link: /nnc/engine/eng-control-r.html
-- name: ENG CORE ANTI-ICE L
+- name: ENG CORE ANTI-ICE&nbsp;L
   link: /nnc/engine/eng-core-anti-ice-l.html
-- name: ENG CORE ANTI-ICE R
+- name: ENG CORE ANTI-ICE&nbsp;R
   link: /nnc/engine/eng-core-anti-ice-r.html
 - name: ENG EEC MODE L
   link: /nnc/engine/eng-eec-mode-l.html

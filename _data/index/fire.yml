@@ -1,4 +1,4 @@
-- name: BOTTLE DISCHARGE, DET FIRE ...
+- name: BOTTLE DISCHARGE,</br>DET FIRE&nbsp;...
   link: /nnc/fire/bottle/index.html
 - name: FIRE, SMOKE ...
   link: /nnc/fire/fire/index.html
@@ -22,13 +22,13 @@
   link: /nnc/fire/overheat-wheel-well.html
 - name:
   link:
-- name: SMOKE EQUIP CLG AFT
+- name: SMOKE EQUIP CLG&nbsp;AFT
   link: /nnc/fire/smoke-equip-clg-aft.html
-- name: SMOKE EQUIP CLG FWD
+- name: SMOKE EQUIP CLG&nbsp;FWD
   link: /nnc/fire/smoke-equip-clg-fwd.html
-- name: SMOKE EQUIP CLG MISC
+- name: SMOKE EQUIP CLG&nbsp;MISC
   link: /nnc/fire/smoke-equip-clg-misc.html
 - name: SMOKE LAVATORY
   link: /nnc/fire/smoke-lavatory.html
-- name: SMOKE REST UPR DR 4
+- name: SMOKE REST UPR DR&nbsp;4
   link: /nnc/fire/smoke-rest-upr-dr-4.html

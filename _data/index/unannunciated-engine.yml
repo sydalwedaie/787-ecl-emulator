@@ -1,14 +1,14 @@
-- name: Aborted Engine Start L
+- name: Aborted Engine Start&nbsp;L
   link: /nnc/engine/rpm/aborted-engine-start-l.html
-- name: Aborted Engine Start R
+- name: Aborted Engine Start&nbsp;R
   link: /nnc/engine/rpm/aborted-engine-start-r.html
 - name: Dual Eng Fail/Stall
   link: /nnc/engine/damage/dual-eng-fail-stall.html
-- name: Eng In-Flight Start L
+- name: Eng In-Flight Start&nbsp;L
   link: /nnc/engine/rpm/eng-in-flight-start-l.html
-- name: Eng In-Flight Start R
+- name: Eng In-Flight Start&nbsp;R
   link: /nnc/engine/rpm/eng-in-flight-start-r.html
-- name: Eng Svr Damage/Sep L
+- name: Eng Svr Damage/Sep&nbsp;L
   link: /nnc/engine/damage/eng-svr-damage-sep-l.html
-- name: Eng Svr Damage/Sep R
+- name: Eng Svr Damage/Sep&nbsp;R
   link: /nnc/engine/damage/eng-svr-damage-sep-r.html

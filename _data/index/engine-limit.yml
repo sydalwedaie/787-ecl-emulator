@@ -18,9 +18,9 @@
   link: /nnc/engine/limit/eng-oil-temp-r.html
 - name: ENG REV AIR/GND
   link: /nnc/engine/limit/eng-rev-air-gnd.html
-- name: ENG REV COMMANDED L
+- name: ENG REV COMMANDED&nbsp;L
   link: /nnc/engine/limit/eng-rev-commanded-l.html
-- name: ENG REV COMMANDED R
+- name: ENG REV COMMANDED&nbsp;R
   link: /nnc/engine/limit/eng-rev-commanded-r.html
 - name: ENG REV LIMITED L
   link: /nnc/engine/limit/eng-rev-limited-l.html
