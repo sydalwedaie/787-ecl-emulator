@@ -91,5 +91,35 @@
 	    "url": "/nc/index.html",
 	    "description": "Normal Menu Items"
 	  }
+	],
+	"screenshots" : [
+	  {
+	    "src": "/assets/images/screenshots/screenshot-1.png",
+	    "sizes": "1200x2700",
+	    "type": "image/png",
+	    "platform": "narrow",
+	    "label": "Full 787 ECL Emulator"
+	  },
+	  {
+	    "src": "/assets/images/screenshots/screenshot-2.png",
+	    "sizes": "1200x2700",
+	    "type": "image/png",
+	    "platform": "narrow",
+	    "label": "400+ Checklists as per paper QRH"
+	  }
+	  {
+	    "src": "/assets/images/screenshots/screenshot-3.png",
+	    "sizes": "1200x2700",
+	    "type": "image/png",
+	    "platform": "narrow",
+	    "label": "Cross Platform: Apple, Android"
+	  },
+	  {
+	    "src": "/assets/images/screenshots/screenshot-4.png",
+	    "sizes": "1200x2700",
+	    "type": "image/png",
+	    "platform": "narrow",
+	    "label": "All Your Devices: Online & Offline"
+	  }
 	]
 }

@@ -21,7 +21,7 @@ html
     
     -ms-touch-action: manipulation
     touch-action: manipulation
-    overflow-y: scroll
+    //overflow-y: scroll
 
 *, *:before, *:after 
     box-sizing: inherit
@@ -41,8 +41,10 @@ body
     -ms-user-select: none
     user-select: none
     -webkit-touch-callout: none
-
+    //-webkit-overflow-scrolling: touch;
+    
     //background-image: url("/assets/images/content/not-for-official-use.png")
+
 
 body::-webkit-scrollbar 
     display: none
@@ -247,7 +249,7 @@ body::-webkit-scrollbar
         padding: 16px
         text-align: left
         max-width: 500px
-        font-size: 13px
+        font-size: 11px
 
     img
         width: 75%
@@ -261,6 +263,7 @@ body::-webkit-scrollbar
 #iban-qr-code 
     float: left
     padding: 0 2px
+    min-width: 50%
     width: 50%
 
 // ============================================ 
@@ -282,12 +285,8 @@ body::-webkit-scrollbar
 // Media Queries
 // ============================================ 
 @media only screen and (min-height: 607px) and (min-width: 370px)
-         
-    .navigation-menu
-        
-
+ 
     .content-header
-
         h1, h2, h3
             height: 6.1vh
             font-size: 18px
@@ -307,7 +306,7 @@ body::-webkit-scrollbar
     .content-menu-item.button-wrap
         height: 6.1vh
 
-    .navigation-menu, .content-menu, .alert
+    .navigation-menu, .content-menu, .alert, .info p
         font-size: 13px
         font-weight: 600
 
@@ -319,6 +318,7 @@ body::-webkit-scrollbar
 
 
 @media only screen and (min-height: 740px) and (min-width: 500px)
+
     .navigation-menu
         height: 5vh
     .navigation-menu, .content-menu, .alert, .info p
@@ -365,7 +365,7 @@ body::-webkit-scrollbar
         padding-left: 10px
 
 @media only screen and (min-height: 1300px) and (min-width: 670px)
-    .navigation-menu, .content-menu, .info p
+    .navigation-menu, .content-menu, .alert, .info p
         font-size: 24px
 
     .content-header
