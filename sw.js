@@ -65,3 +65,17 @@ self.addEventListener('fetch', function (event) {
 		}).catch(() => caches.match('/offline.html'))
 	);
 });
+
+self.addEventListener("message", function(event) {
+    //event.source.postMessage("Responding to " + event.data);
+    self.clients.matchAll().then(all => all.forEach(client => {
+        client.postMessage("Responding to " + event.data);
+    }));
+});
+
+self.addEventListener("message", function(event) {
+    //event.source.postMessage("Responding to " + event.data);
+    self.clients.matchAll().then(all => all.forEach(client => {
+        client.postMessage("Responding to " + event.data);
+    }));
+});
