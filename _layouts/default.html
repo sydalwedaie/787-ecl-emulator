@@ -57,42 +57,36 @@
     </title> 
   
     <script type="text/javascript">
-      (function() {
-          "use strict";
-
-          if (!navigator.serviceWorker || !navigator.serviceWorker.register) {
-              console.log("This browser doesn't support service workers");
-              return;
-          }
-
-          // Listen to messages from service workers.
-          navigator.serviceWorker.addEventListener('message', function(event) {
-              console.log("Got reply from service worker: " + event.data);
-          });
-
-          // Are we being controlled?
-          if (navigator.serviceWorker.controller) {
-              // Yes, send our controller a message.
-              console.log("Sending 'hi' to controller");
-              navigator.serviceWorker.controller.postMessage("hi");
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', async function() {
+          const registration = await navigator.serviceWorker.register('/sw.js');
+          if (registration.waiting && registration.active) {
+            // The page has been loaded when there's already a waiting and active SW.
+            // This would happen if skipWaiting() isn't being called, and there are
+            // still old tabs open.
+            console.log('Please close all tabs to get updates.');
           } else {
-              // No, register a service worker to control pages like us.
-              // Note that it won't control this instance of this page, it only takes effect
-              // for pages in its scope loaded *after* it's installed.
-              navigator.serviceWorker.register("/sw.js")
-                  .then(function(registration) {
-                      console.log(registration)
-                      console.log("Service worker registered, scope: " + registration.scope);
-                      console.log("Refresh the page to talk to it.");
-                      // If we want to, we might do `location.reload();` so that we'd be controlled by it
-                  })
-                  .catch(function(error) {
-                      console.log("Service worker registration failed: " + error.message);
-                  });
+            // updatefound is also fired for the very first install. ¯\_(ツ)_/¯
+            registration.addEventListener('updatefound', () => {
+              registration.installing.addEventListener('statechange', () => {
+                if (event.target.state === 'installed') {
+                  if (registration.active) {
+                    // If there's already an active SW, and skipWaiting() is not
+                    // called in the SW, then the user needs to close all their
+                    // tabs before they'll get updates.
+                    console.log('Please close all tabs to get updates.');
+                  } else {
+                    // Otherwise, this newly installed SW will soon become the
+                    // active SW. Rather than explicitly wait for that to happen,
+                    // just show the initial "content is cached" message.
+                    console.log('Content is cached for the first time!');
+                  }
+                }
+              });
+            });
           }
-      })();
-   
-      
+        });
+      }
     </script>
     
   </head>
@@ -103,8 +97,10 @@
       <!--
       {% include footer-menu.html %}
       -->
-    </div>
 
+        </div>
+
+    {% if page.url == "/" %}
     <script>
       if (navigator.serviceWorker.controller===null){
         let content = document.getElementsByClassName('content')[0]
@@ -113,9 +109,10 @@
         let h2 = document.createElement("h2");
         h2.className = "button-wrap"
         document.getElementById('alert').prepend(h2);
-        h2.innerHTML = "<div class='button alert'>Downloading</div>"
+        h2.innerHTML = "<div class='button alert'>App may be slow on initial visit as checklists are being downloaded</div>"
       }
     </script>
+    {% endif %}
 
     {% if page.url == "/info/support-fawri.html" %}
     <script type="text/javascript" src="/assets/js/clipboard.min.js"></script>
