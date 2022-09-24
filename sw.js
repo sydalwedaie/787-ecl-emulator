@@ -32,13 +32,14 @@ const other = [
 	"/assets/css/style.css",
 	"/404.html",
 	"/offline.html",
-	"/"
+	"/",
+	"https://i.creativecommons.org/l/by-nc/4.0/80x15.png"
 ]
 
 
-const all_assets = [...nnc, ...nc, ...checklist_content, ...info, ...fonts, ...content_images, ...scripts,  ...other]
+const all_assets = [...other, ...fonts, ...checklist_content, ...nnc, ...nc, ...content_images, ...scripts]
 
-var cacheName = "ecl-cache-015"
+var cacheName = "ecl-cache-017"
 self.addEventListener('install', function (event) {
 
 	event.waitUntil((async () => {

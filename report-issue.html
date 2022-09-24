@@ -3,34 +3,28 @@ layout: app-info
 title: REPORT ISSUE
 ---
 
-<form name="contact" action="/form-success.html" method="POST" data-netlify="true">
-  <p>
-    <label>Your Name: <input type="text" name="name" /></label>
-  </p>
+<section>
+	<form class="report-from" name="report-from" action="/form-success.html" method="POST" data-netlify="true">
+		<p>Please sumbit your suggestions, issues, typos, missing checklists, etc using the form below. Feel free to add any supporting document like a screenshot.</p>
+		
+		<div class="form-item">
+			<label>Your Email: <small>(Optional)</small> <input type="email" name="email" /></label>
+		</div>
 
-  <p>
-    <label>Your Email: <input type="email" name="email" /></label>
-  </p>
+		<div class="form-item">
+			<label>Add file: <small>(Optional-Limit 8 MB per file)</small>
+				<input name="file" type="file"/>
+				<input name="file" type="file"/>
+				<input name="file" type="file"/>
+			</label>
+		</div>
 
-  <p>
-    <label>Your Role: <select name="role[]" multiple>
-      <option value="leader">Leader</option>
-      <option value="follower">Follower</option>
-    </select></label>
-  </p>
+		<div class="form-item">
+			<label>Message: <textarea name="message" required></textarea></label>
+		</div>
 
-  <p>
-    <label>
-      <span>Add file:</span>
-      <input name="file" type="file"/>
-    </label>
-  </p>
-
-  <p>
-    <label>Message: <textarea name="message"></textarea></label>
-  </p>
-
-  <p>
-    <button type="submit">Send</button>
-  </p>
-</form>
+		<div class="button-wrap submit">
+			<a class="button" type="submit">SEND</a>
+		</div>
+	</form>
+</section>

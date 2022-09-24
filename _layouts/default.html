@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="robots" content="noindex, nofollow">
     <meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1, initial-scale=1, user-scalable=no">
+    <meta name="screen-orientation" content="portrait">
 
     <!-- Android  -->
     <meta name="mobile-web-app-capable" content="yes">
@@ -17,11 +18,9 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
 
+    <link rel="stylesheet" type="text/css" href="/assets/css/style.css">
     <link rel="apple-touch-icon" type="image/png" href="/assets/images/icons/icon-180.png">
     <link rel="manifest" type="text/application/manifest+json" href="/app.webmanifest">
-    <link rel="stylesheet" type="text/css" href="/assets/css/style.css">
-
-    <!-- <meta name="screen-orientation" content="portrait"> -->
 
     <link href="/assets/images/icons/favicon-16.png" rel="icon" type="image/png" sizes="16x16">
     <link href="/assets/images/icons/favicon-32.png" rel="icon" type="image/png" sizes="32x32">
@@ -58,11 +57,13 @@
     </title> 
   
     <script type="text/javascript">
-      if ("serviceWorker" in navigator) {
-        navigator.serviceWorker.register("/sw.js");
-
-      };
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', function() {
+        navigator.serviceWorker.register('/sw.js');
+        });
+      }
     </script>
+
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-41TQ0PDRZL"></script>
     <script>
@@ -81,8 +82,7 @@
       <!--
       {% include footer-menu.html %}
       -->
-
-        </div>
+    </div>
 
     {% if page.url == "/" %}
     <script>
@@ -93,7 +93,7 @@
         let h2 = document.createElement("h2");
         h2.className = "button-wrap"
         document.getElementById('alert').prepend(h2);
-        h2.innerHTML = "<div class='button alert'>App may be slow on initial visit as checklists are being downloaded</div>"
+        h2.innerHTML = "<div class='button alert'>App may be slow on first visit while<br />checklists are being downloaded</div>"
       }
     </script>
     {% endif %}

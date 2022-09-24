@@ -43,11 +43,15 @@ body
     -webkit-touch-callout: none
     //-webkit-overflow-scrolling: touch;
     
-    //background-image: url("/assets/images/content/not-for-official-use.png")
 
 
 body::-webkit-scrollbar 
     display: none
+
+.clearfix::after
+    content: "";
+    clear: both;
+    display: table;
 
 @font-face
   font-family: 'Roboto Mono'
@@ -69,7 +73,7 @@ body::-webkit-scrollbar
     text-align: center
     font-family: 'Roboto Mono', monospace
     color: white
-    width: 100vw
+    //width: 100vw
     min-height: 100vh
     margin: 0 auto
     background-color: black
@@ -82,8 +86,8 @@ body::-webkit-scrollbar
     display: block
     line-height: 1
     padding: 0 5px //m
-    background-color: #737175
-
+    background-color: #737175 //button color
+    height: 100% 
     border-style: solid
     border-width: 2px //m
     border-top-color: #a19ea5
@@ -116,8 +120,6 @@ body::-webkit-scrollbar
 .button:focus 
     border: 2px solid #ff00ca
 
-
-
 .button:active 
     background-color: #3e6b2b
 
@@ -145,10 +147,9 @@ body::-webkit-scrollbar
     width: 33.33%
 
     .button
-        height: 100%
+        //height: 100%
         padding: 0 5px
 
-    &.button-wrap
         
 // ============================================ 
 // CHECKLIST CONTENT
@@ -171,7 +172,7 @@ body::-webkit-scrollbar
         justify-content: center
 
     .button 
-        height: 100%
+        //height: 100%
 
 
 .content-level-1 
@@ -201,7 +202,7 @@ body::-webkit-scrollbar
 
 .content-menu-item 
     .button 
-        height: 100%
+        //height: 100%
         text-align: left
 
     &.button-wrap 
@@ -232,7 +233,7 @@ body::-webkit-scrollbar
         position: absolute
         top: 74px
         width: 100%
-        background-image: url("/assets/images/content/not-for-official-use-small-4-darker.png")
+        background-image: url("/assets/images/content/not-for-official-use.png")
         opacity: 0.2
         //background-repeat: repeat-y
         background-size: 50%
@@ -245,16 +246,13 @@ body::-webkit-scrollbar
 .info 
     h3 
         text-align: left
-        padding-left: 1em
         padding-top: 1em
         color: #089cb9
 
-    p
-        padding: 1em
+    p, label
+        padding-top: 1em
         text-align: left
-        max-width: 500px
         font-size: 11px
-
 
     img
         width: 75%
@@ -264,11 +262,15 @@ body::-webkit-scrollbar
         height: 100%
         padding-bottom: 100px
 
+    section
+        max-width: 450px
+        margin: 0 auto
+        padding: 0 5px
+
 
 #iban-qr-code 
     float: left
-    padding: 0 2px
-    min-width: 50%
+    padding: 20px 0
     width: 50%
 
 #license
@@ -287,6 +289,41 @@ body::-webkit-scrollbar
     a 
         color: #414340
         text-decoration: underline
+
+
+.form-item
+    text-align: left
+    padding: 10px 0
+
+    input[type="email"], textarea
+        font-family: 'Roboto Mono', monospace
+        font-size: 100%
+        color: white
+        background-color: #737175
+        width: 100%
+        border-style: solid
+        border-width: 2px //m
+        border-top-color: #464548
+        border-left-color: #464548
+        border-right-color: #a19ea5
+        border-bottom-color: #a19ea5
+
+    input[type="file"]
+        width: 100%
+
+    input[type="email"]
+        height: 37px
+
+    textarea
+        height: 111px
+        width: 100%
+        
+
+.submit
+    width: 33.33%
+    height: 37px
+
+
 // ============================================ 
 // FOOTER
 // ============================================ 
@@ -305,7 +342,7 @@ body::-webkit-scrollbar
 // ============================================ 
 // Media Queries
 // ============================================ 
-@media only screen and (min-height: 537px)
+@media only screen and (min-height: 600px)
     #license
         position: fixed
         bottom: 0
@@ -333,12 +370,21 @@ body::-webkit-scrollbar
     .content-menu-item.button-wrap
         height: 6.1vh
 
-    .navigation-menu, .content-menu, .alert, .info p
+    .navigation-menu, .content-menu, .alert
         font-size: 13px
         font-weight: 600
 
+    .info p, .info label
+        font-size: 13px
+
+    .info section
+        padding: 0 10px
+
     #license div
         font-size: 11px
+
+    .submit
+        height: 6.1vh
 
     .checklist-content 
         padding-top: calc(6.1vh + 37px)
@@ -353,7 +399,7 @@ body::-webkit-scrollbar
 
     .navigation-menu
         height: 5vh
-    .navigation-menu, .content-menu, .alert, .info p
+    .navigation-menu, .content-menu, .alert, .info p, .info label
         font-size: 16px
 
     #license div
@@ -383,7 +429,7 @@ body::-webkit-scrollbar
 
 
 @media only screen and (min-height: 950px) and (min-width: 570px)
-    .navigation-menu, .content-menu, .alert, .info p
+    .navigation-menu, .content-menu, .alert, .info p, .info label
         font-size: 20px
         font-weight: 600
 
@@ -402,7 +448,7 @@ body::-webkit-scrollbar
         padding-left: 10px
 
 @media only screen and (min-height: 1300px) and (min-width: 670px)
-    .navigation-menu, .content-menu, .alert, .info p
+    .navigation-menu, .content-menu, .alert, .info p, .info label
         font-size: 24px
 
     #license div
@@ -420,6 +466,9 @@ body::-webkit-scrollbar
 
     .checklist-content 
         max-width: 650px
+
+    .info section
+        max-width: 550px
     
 
 @media only screen and (orientation: landscape)
@@ -432,9 +481,5 @@ body::-webkit-scrollbar
 @media only screen and (display-mode: standalone)
     .no-display
         display: none
-// ============================================ 
-// Testing Fixed Nav
-// ============================================ 
-
 
 
