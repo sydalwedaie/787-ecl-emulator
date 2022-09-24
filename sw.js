@@ -32,8 +32,7 @@ const other = [
 	"/assets/css/style.css",
 	"/404.html",
 	"/offline.html",
-	"/",
-	"https://i.creativecommons.org/l/by-nc/4.0/80x15.png"
+	"/"
 ]
 
 
@@ -65,11 +64,4 @@ self.addEventListener('fetch', function (event) {
 			return response || fetch(event.request);
 		}).catch(() => caches.match('/offline.html'))
 	);
-});
-
-self.addEventListener("message", function(event) {
-    //event.source.postMessage("Responding to " + event.data);
-    self.clients.matchAll().then(all => all.forEach(client => {
-        client.postMessage("Responding to " + event.data);
-    }));
 });
