@@ -32,6 +32,7 @@ const other = [
 	"/assets/css/style.css",
 	"/404.html",
 	"/offline.html",
+	"/info/about.html",
 	"/"
 ]
 
