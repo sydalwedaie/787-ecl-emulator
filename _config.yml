@@ -2,7 +2,7 @@ title: 787 ECL Emulator
 email: your-email@example.com
 description: >- # this means to ignore newlines until "baseurl:"
   This is a 787 ECL emulator. It is a cross platform application available on iOS and Android. The content of the checklists is based on the paper QRH of one specific airline.
-  It is not meant to replicate the functionality of the aircraft-installed ECL. Not for official nor training use.
+  It is not meant to replicate the functionality of the aircraft-installed ECL; It is not interactive. Not for official nor training use.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
