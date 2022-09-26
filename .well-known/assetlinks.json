@@ -1,6 +1,6 @@
 [{
         "relation": ["delegate_permission/common.handle_all_urls"],
         "target" : { "namespace": "android_app", "package_name": "com.app_787_ecl.twa",
-                     "sha256_cert_fingerprints": ["EF:2A:C6:4C:4C:B1:72:26:96:51:1A:C9:54:25:CF:26:61:59:8A:82:1A:7D:13:03:ED:E2:74:A9:10:10:58:CC"] }
+                     "sha256_cert_fingerprints": ["AD:D8:9B:ED:E9:15:78:D9:78:87:4A:34:16:79:3C:EF:48:7E:C5:1A:AC:9C:D6:EC:94:EC:0A:65:C3:0B:8D:C4"] }
       }
 ]
