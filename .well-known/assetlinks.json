@@ -1,6 +1,11 @@
-[{
-        "relation": ["delegate_permission/common.handle_all_urls"],
-        "target" : { "namespace": "android_app", "package_name": "com.app_787_ecl.twa",
-                     "sha256_cert_fingerprints": ["AD:D8:9B:ED:E9:15:78:D9:78:87:4A:34:16:79:3C:EF:48:7E:C5:1A:AC:9C:D6:EC:94:EC:0A:65:C3:0B:8D:C4"] }
-      }
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.app_787_ecl.twa",
+      "sha256_cert_fingerprints":
+        ["AD:D8:9B:ED:E9:15:78:D9:78:87:4A:34:16:79:3C:EF:48:7E:C5:1A:AC:9C:D6:EC:94:EC:0A:65:C3:0B:8D:C4"]
+    }
+  }
 ]
