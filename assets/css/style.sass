@@ -244,20 +244,6 @@ body::-webkit-scrollbar
 // INFO
 // ============================================ 
 .info 
-    h3 
-        text-align: left
-        padding-top: 1em
-        color: #089cb9
-
-    p, label
-        padding-top: 1em
-        text-align: left
-        font-size: 11px
-
-    img
-        width: 75%
-        max-width: 400px
-
     &.content-level-2
         height: 100%
         padding-bottom: 100px
@@ -266,6 +252,29 @@ body::-webkit-scrollbar
         max-width: 450px
         margin: 0 auto
         padding: 0 5px
+    
+        h2, h3 
+            text-align: left
+            padding-top: 1em
+            color: #089cb9
+
+        p, label
+            padding-top: 1em
+            text-align: left
+            font-size: 11px
+            line-height: 1.5
+
+        img
+            width: 75%
+            max-width: 400px
+
+        li
+            text-align: left
+    
+    
+
+
+    
 
 
 #iban-qr-code 
@@ -380,11 +389,10 @@ form .submit, .submit
         font-size: 13px
         font-weight: 600
 
-    .info p, .info label
-        font-size: 13px
-
-    .info section
+    .info section 
         padding: 0 10px
+        p,label
+            font-size: 13px
 
     #license div
         font-size: 11px
@@ -405,7 +413,7 @@ form .submit, .submit
 
     .navigation-menu
         height: 5vh
-    .navigation-menu, .content-menu, .alert, .info p, .info label
+    .navigation-menu, .content-menu, .alert, .info section p, .info section label
         font-size: 16px
 
     #license div
@@ -435,7 +443,7 @@ form .submit, .submit
 
 
 @media only screen and (min-height: 950px) and (min-width: 570px)
-    .navigation-menu, .content-menu, .alert, .info p, .info label
+    .navigation-menu, .content-menu, .alert, .info section p, .info section label
         font-size: 20px
         font-weight: 600
 
@@ -454,7 +462,7 @@ form .submit, .submit
         padding-left: 10px
 
 @media only screen and (min-height: 1300px) and (min-width: 670px)
-    .navigation-menu, .content-menu, .alert, .info p, .info label
+    .navigation-menu, .content-menu, .alert, .info section p, .info section label
         font-size: 24px
 
     #license div
