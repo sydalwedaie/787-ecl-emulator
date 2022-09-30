@@ -39,7 +39,7 @@ const other = [
 
 const all_assets = [...other, ...fonts, ...checklist_content, ...nnc, ...nc, ...content_images, ...scripts]
 
-var cacheName = "ecl-cache-017"
+var cacheName = "ecl-cache-018"
 self.addEventListener('install', function (event) {
 
 	event.waitUntil((async () => {
